@@ -1,0 +1,1 @@
+!function(a){"use strict";if(!Modernizr.adownload){var b=a("a");b.each(function(){var b=a(this).attr("download");if("undefined"!==typeof b&&b!==!1){var c=a("<div>").addClass("download-instruction").text('Right-click and select "Download Linked File"');c.insertAfter(a(this))}})}}(jQuery);
