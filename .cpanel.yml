@@ -1,4 +1,9 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+---
+despliegue :
+      tareas :
+        - exportar DEPLOYPATH = / home / <username> / public_html   # Agregar / <app_folder> si es necesario
+        - / bin / cp <nombre_archivo> $ DEPLOYPATH                  # Copia un archivo específico al destino desde la raíz
+        - / bin / cp / <sub_folder> / <file_name> $ DEPLOYPATH    # copia el archivo específico de la subcarpeta de origen
+        - / bin cp * $ DEPLOYPATH                            # copiar todo desde la raíz
+        - / bin cp / <sub_folder> / * $ DEPLOYPATH              # copiar todo desde la raíz de la subcarpeta
+        - / bin / cp -r * $ DEPLOYPATH ges $DEPLOYPATH
